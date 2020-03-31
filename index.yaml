@@ -1,3 +1,13 @@
 apiVersion: v1
-entries: {}
-generated: "2020-03-31T11:13:48.264444081+08:00"
+entries:
+  android-dm:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-03-31T11:37:03.382005244+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 5a9c7cc9c667f7b3dff6baffa280f8d9ad49ce37afc6160f0d94c10fd937d43a
+    name: android-dm
+    urls:
+    - https://gangqiang01.github.io/helmchart/android-dm-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-03-31T11:37:03.371066351+08:00"

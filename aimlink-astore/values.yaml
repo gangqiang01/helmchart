@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 labels: astore
-namespace: adm
+namespace: gangqiang-test
 
 image:
   repository: changqing1990/aimlink-astore

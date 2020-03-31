@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 labels: postgressql
-namespace: adm
+namespace: gangqiang-test
 
 image:
   repository: postgres
