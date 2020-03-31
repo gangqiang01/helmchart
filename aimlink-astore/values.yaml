@@ -1,0 +1,17 @@
+# Default values for aimlink-astore.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+labels: astore
+namespace: adm
+
+image:
+  repository: changqing1990/aimlink-astore
+  tag: latest
+  pullPolicy: IfNotPresent
+
+nodeSelector:
+  hostname: k8snode2
+
+service:
+  type: ClusterIP

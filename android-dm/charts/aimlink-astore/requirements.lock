@@ -1,0 +1,6 @@
+dependencies:
+- name: m2m-postgressql
+  repository: https://jwzl.github.io/helmCharts
+  version: 0.1.0
+digest: sha256:c94d0e093a3b0f7aa35f48f3d3fb7f1fa345697c3c44f187c11d326e752230d5
+generated: "2019-09-30T10:00:27.153376305+08:00"

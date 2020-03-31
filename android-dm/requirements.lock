@@ -1,0 +1,9 @@
+dependencies:
+- name: m2m-mosquitto
+  repository: https://jwzl.github.io/helmCharts
+  version: 0.1.0
+- name: aimlink-astore
+  repository: https://jwzl.github.io/helmCharts
+  version: 0.1.0
+digest: sha256:d5b3dd6412c49a9f833aaa4b948bd7c40f8130674cdbe634eca8e2b4e3dfe187
+generated: "2019-09-30T10:56:58.253673897+08:00"

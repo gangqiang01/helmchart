@@ -1,0 +1,18 @@
+# Default values for android-dm.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+labels: android-dm
+namespace: adm
+
+image:
+  repository: changqing1990/m2mserver
+  tag: latest
+  pullPolicy: IfNotPresent
+
+nodeSelector:
+  hostname: k8snode2
+
+service:
+  type: ClusterIP

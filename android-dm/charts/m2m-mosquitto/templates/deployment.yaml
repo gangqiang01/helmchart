@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    k8s-app: {{ .Values.labels }}
+  name: {{.Chart.Name}}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    matchLabels:
+      k8s-app: {{ .Values.labels }}
+  template:
+    metadata:
+      labels:
+        k8s-app: {{ .Values.labels }}
+    spec:
+      containers:
+      - name: {{.Chart.Name}}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 1883
+          hostPort: 1883
+        - containerPort: 11880
+          hostPort: 11880
+      nodeSelector:
+        kubernetes.io/hostname: {{ .Values.nodeSelector.hostname }}
+      restartPolicy: Always
+      imagePullSecrets:
+      - name: regcred

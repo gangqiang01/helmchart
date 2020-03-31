@@ -1,0 +1,4 @@
+dependencies:
+  - name: m2m-postgressql
+    version: 0.1.0
+    repository: https://jwzl.github.io/helmCharts

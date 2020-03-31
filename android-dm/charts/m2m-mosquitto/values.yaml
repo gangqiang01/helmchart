@@ -1,0 +1,17 @@
+# Default values for m2m-mosquitto.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+labels: m2m-mosquitto
+namespace: adm
+
+image:
+  repository: changqing1990/m2m-mosquitto
+  tag: latest
+  pullPolicy: IfNotPresent
+
+nodeSelector:
+  hostname: k8snode2
+
+service:
+  type: ClusterIP
